@@ -28,6 +28,7 @@ tasks:
     desc: "Roll the pods in one of the deployments"
     cmds:
       - kubectl rollout restart deployment nginx-better
+      - kubectl rollout restart deployment nginx-minimal
       - watch "kubectl get pods"
 
   05-delete-namespace:
